@@ -10,11 +10,11 @@ on:
       amux_map:
         description: "Permutation: LX,LY,RY,RX | Absolute: abs:RX,RY,LY,LX | or 'unchanged'"
         required: true
-        default: unchanged
+        default: 'unchanged'
       invert_axes:
         description: "Use 'unchanged' OR CSV with lx,ly,rx,ry (e.g. lx,rx)"
         required: false
-        default: unchanged
+        default: 'unchanged'
       tuning:
         description: "One number for all (e.g. 200) OR 8 CSV: x+,x-,y+,y-,rx+,rx-,ry+,ry-"
         required: false
