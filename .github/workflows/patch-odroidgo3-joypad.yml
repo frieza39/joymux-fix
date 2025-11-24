@@ -36,12 +36,12 @@ jobs:
           if [ ! -f tools/patch_og3_joypad.py ]; then
             echo "tools/patch_og3_joypad.py not found." >&2; exit 1
           fi
-          if [ ! -f "${{ github.event.inputs.dtb_path }}" ]; then
-            echo "DTB not found: ${{ github.event.inputs.dtb_path }}" >&2
+          if [ ! -f "${{ github.event.inputs.rf3536k4ka.dtb }}" ]; then
+            echo "DTB not found: ${{ github.event.inputs.rf3536k4ka.dtb }}" >&2
             {
               echo "### ❌ DTB not found"
               echo ""
-              echo "Input: \`${{ github.event.inputs.dtb_path }}\`"
+              echo "Input: \`${{ github.event.inputs.rf3536k4ka.dtb }}\`"
               echo ""
               echo "Some DTBs detected:"
               echo ""
